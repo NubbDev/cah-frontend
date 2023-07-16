@@ -9,10 +9,10 @@ const BgInteractive:React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
 
     useEffect(() => {
         const move = () => {
-            setCurX(curX + (tgX - curX) / 20)
-            setCurY(curY + (tgY - curY) / 20)
+            setCurX(curX + (tgX - curX) / 10)
+            setCurY(curY + (tgY - curY) / 10)
 
-            requestAnimationFrame(move)
+            requestAnimationFrame(() => move())
         }
 
         window.addEventListener('mousemove', (e) => {
