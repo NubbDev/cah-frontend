@@ -1,0 +1,27 @@
+.container {
+
+    width: 13rem;
+    height: 13rem;
+    margin: 1rem;
+    position: relative;
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out
+}
+
+.container:hover {
+    transform: scale(1.05);
+    outline: rgb(0, 208, 255) solid 1px;
+}
+
+.selected {
+    outline: rgb(0, 255, 106) solid 1px;
+    transform: scale(1.025);
+
+}

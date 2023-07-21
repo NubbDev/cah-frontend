@@ -1,0 +1,69 @@
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 3.5rem 3fr 3.5rem;
+
+    grid-template-areas:
+        "title-filter"
+        "games"
+        "create-join";
+
+    gap: 0.1rem;
+    width: 100%;
+    height: 100%;
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4.5px );
+    border-radius: 0.5rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.title-filter{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.title-filter .title {
+    margin: auto 0 auto 1rem;
+    padding: 0;
+}
+.title-filter .title h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.title-filter .filter {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.title-filter .filter button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.create-join{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.games_container{
+    grid-area: games;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+

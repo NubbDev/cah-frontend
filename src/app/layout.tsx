@@ -37,7 +37,7 @@ export default function RootLayout({
               <div className={style['g3']}/>
               <div className={style['g4']}/>
               <div className={style['g5']}/> */}
-              <BigInteractive className={style['interactive']}/>
+              {/* <BigInteractive className={style['interactive']}/> */}
             </div>
           </div>
         </body>

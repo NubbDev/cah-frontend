@@ -2,11 +2,13 @@ import {
      configureStore,
 } from '@reduxjs/toolkit'
 import AuthOptionSlice from './features/Auth/AuthOptionSlice'
+import SelectedGameSlice from './features/game/selectedGame'
 import { TypedUseSelectorHook, useSelector } from 'react-redux'
 
 const store = configureStore({
     reducer: {
-        authOption: AuthOptionSlice
+        authOption: AuthOptionSlice,
+        selectedGame: SelectedGameSlice
     }
 })
 

@@ -12,17 +12,17 @@ export default () => {
 
     const Options = [
         {
-            name: "Guest",
-            type: LogOption.GUEST
-        },
-        {
             name: "Login",
             type: LogOption.LOGIN
         },
         {
             name: "Register",
             type: LogOption.REGISTER
-        }
+        },
+        {
+            name: "Guest",
+            type: LogOption.GUEST
+        },
     ]
     return (
         <div className={style.container}>

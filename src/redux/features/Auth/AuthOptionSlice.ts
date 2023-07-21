@@ -4,7 +4,7 @@ import {
 } from '@reduxjs/toolkit'
 
 const initialState = {
-    value: LogOption.GUEST
+    value: LogOption.LOGIN
 }
 
 const AuthOptionSlice = createSlice({

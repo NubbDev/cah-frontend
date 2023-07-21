@@ -1,7 +1,9 @@
 .button {
     border-radius: 100rem;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.7rem 1rem;
     text-align: center;
     text-decoration: none;
@@ -27,13 +29,13 @@
 }
 
 .secondary {
-    --btn-shadow: 0, 53, 128;
+    --btn-shadow: 103, 0, 103;
     box-shadow: rgba(var(--btn-shadow), .2) 0 -25px 18px -14px inset,rgba(var(--btn-shadow), .15) 0 1px 2px,rgba(var(--btn-shadow), .15) 0 2px 4px,rgba(var(--btn-shadow), .15) 0 4px 8px,rgba(var(--btn-shadow), .15) 0 8px 16px,rgba(var(--btn-shadow), .15) 0 16px 32px;
-    color: green;
-    background-color: #c2fbd7;
+    color: rgb(103, 0, 103);
+    background-color: #e4c2fb;
 }
 .secondary:hover {
-    --btn-shadow: 0, 53, 128;
+    --btn-shadow: 103, 0, 103;
     box-shadow: rgba(var(--btn-shadow),.35) 0 -25px 18px -14px inset,rgba(var(--btn-shadow),.25) 0 1px 2px,rgba(var(--btn-shadow),.25) 0 2px 4px,rgba(var(--btn-shadow),.25) 0 4px 8px,rgba(var(--btn-shadow),.25) 0 8px 16px,rgba(var(--btn-shadow),.25) 0 16px 32px;
 }
 
@@ -49,13 +51,13 @@
 }
 
 .danger {
-    --btn-shadow: 0, 53, 128;
+    --btn-shadow: 255, 0, 0;
     box-shadow: rgba(var(--btn-shadow), .2) 0 -25px 18px -14px inset,rgba(var(--btn-shadow), .15) 0 1px 2px,rgba(var(--btn-shadow), .15) 0 2px 4px,rgba(var(--btn-shadow), .15) 0 4px 8px,rgba(var(--btn-shadow), .15) 0 8px 16px,rgba(var(--btn-shadow), .15) 0 16px 32px;
-    color: green;
-    background-color: #c2fbd7;
+    color: rgb(255, 0, 0);
+    background-color: #fbc2c2;
 }
 .danger:hover {
-    --btn-shadow: 0, 53, 128;
+    --btn-shadow: 255, 0, 0;
     box-shadow: rgba(var(--btn-shadow),.35) 0 -25px 18px -14px inset,rgba(var(--btn-shadow),.25) 0 1px 2px,rgba(var(--btn-shadow),.25) 0 2px 4px,rgba(var(--btn-shadow),.25) 0 4px 8px,rgba(var(--btn-shadow),.25) 0 8px 16px,rgba(var(--btn-shadow),.25) 0 16px 32px;
 }
 
